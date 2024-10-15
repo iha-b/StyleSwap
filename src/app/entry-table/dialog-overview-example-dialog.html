@@ -1,0 +1,13 @@
+<h1 mat-dialog-title> {{data.name}}</h1>
+<div style="margin-bottom: 20px" class="cont" mat-dialog-content>
+  <img [src]="data.ent.get('image').url()" width="100px">
+  <h1>Delete {{data.ent.get('name')}}?</h1>
+
+</div>
+<div class="cont" mat-dialog-actions>
+  <div>
+    <button id = "LBtn" mat-flat-button color="primary" (click)="onNoClick()">Cancel</button>
+    <button id = "Rbtn" mat-stroked-button color="warn" (click)="onDelete(data.ent)" [mat-dialog-close]="data.ent" >Delete</button>
+  </div>
+
+</div>

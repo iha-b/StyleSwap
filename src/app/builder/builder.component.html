@@ -1,0 +1,24 @@
+
+<div id = "MainCont">
+  <div id = "left">
+    <H1>Create a Look</H1>
+    <div id = "formCont">
+      <h2>Choose Attributes</h2>
+      <mat-form-field *ngFor="let cat of categories"  appearance="fill">
+        <mat-label>{{cat}}</mat-label>
+        <mat-select [formControl]="formCtrlList[cat]" name="article" required>
+          <mat-option *ngFor="let item of ItemLists[cat]" [value]="item">
+            {{item.get('name')}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+  </div>
+
+
+  <div id="outfitCont" [style]="visible" >
+    <img width = 150px *ngFor = "let cat of categories" [src]="imageLists[cat]" class = "outImg" [id]="cat">
+  </div>
+
+</div>

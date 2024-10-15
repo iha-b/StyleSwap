@@ -1,0 +1,21 @@
+<div>
+  <section><span id = "greeting">Welcome, {{user}}</span></section>
+
+  <button class="addBtn" (click)="onAdd()" mat-raised-button color="primary"><mat-icon>add</mat-icon> Add new article</button>
+
+
+  <app-entry-table [events]="eventsSubject.asObservable()" ></app-entry-table>
+
+
+<!--  <input type = "file" (change)="onFileSelected($event)">-->
+<!--  <button (click)="onUp()">Uploakdsoka</button>-->
+
+
+
+</div>
+
+
+
+
+
+

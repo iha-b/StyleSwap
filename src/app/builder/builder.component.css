@@ -1,0 +1,79 @@
+
+/* Inline #12 | http://localhost:4200/builder */
+
+#outfitCont{
+  justify-items: center;
+  width: 25%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-radius: 45px;
+  background: #ffffff;
+  box-shadow: inset 7px 7px 19px #c2c2c2, inset -7px -7px 19px #ffffff;
+
+}
+
+[id="Head Wear"] {
+  /* width: 100px; */
+  width: 17%;
+}
+
+[id="Tops (upper body clothing)"] {
+  /* width: 100px; */
+  width: 45%;;
+  margin-top: 20px;
+}
+
+[id="Bottoms"]{
+  /* width: 100px; */
+  width: 80%;
+  margin-top: -10px;
+}
+
+[id="Footwear"]{
+  /* width: 100px; */
+  width: 35%;
+
+}
+#formCont {
+
+  /*! margin-left: 10%; */
+  display: inline-grid;
+  max-height: 40vh;
+  padding: 4%;
+  border-radius: 45px;
+  background: #ffffff;
+  box-shadow: inset 7px 7px 19px #c2c2c2, inset -7px -7px 19px #ffffff;
+  margin-top: 10%;
+  /*! margin-right: 19%; */
+  width: 79%;
+  height: 100%;
+}
+#MainCont {
+  display: flex;
+}
+
+/* Inline #15 | http://localhost:4200/builder */
+
+#left {
+  width: 35%;
+  padding-left: 6%;
+  margin-right: 20%;
+}
+
+
+/* Inline #6 | http://localhost:4200/builder */
+
+#formCont[_ngcontent-xds-c145] {
+  /* width: 24%; */
+  /* margin-top: 10%; */
+  /* margin-right: 20%; */
+
+}
+
+/* Inline #3 | http://localhost:4200/builder */
+
+
+
+
+
+

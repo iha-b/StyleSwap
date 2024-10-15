@@ -1,0 +1,42 @@
+mat-form-field {
+  width: 100%;
+}
+
+.upBtn {
+  width: 100px;
+  height: 100px;
+  margin-left: 36%;
+  display: block;
+  margin-bottom: 23px;
+}
+form.ng-untouched {
+  text-align: center;
+}
+
+.mat-dialog-actions {
+  display: unset;
+  text-align: center;
+}
+
+.ng-star-inserted {
+  text-align: center;
+}
+mat-select {
+  text-align: unset !important;
+}
+mat-option {
+  text-align: unset !important;
+}
+
+
+#CanBtn {
+  height: 50px;
+  width: 35%;
+  margin-right: 10%;
+}
+#UploadBtn {
+  height: 50px;
+  width: 35%;
+  margin-left: 10%;
+}
+

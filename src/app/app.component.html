@@ -1,0 +1,17 @@
+
+<mat-toolbar style="margin-bottom: 3%"  color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>join_right</mat-icon>
+  </button>
+  <span style="font-weight: lighter">Look</span><span style="font-weight: bolder">Book</span>
+  <span class="example-spacer"></span>
+
+  <button style="margin-right: 10px" mat-raised-button routerLink="/builder"><mat-icon>whatshot</mat-icon>Create Outfit!</button>
+  <button style="margin-right: 10px" mat-raised-button routerLink="/profile"><mat-icon>style</mat-icon>Library</button>
+  <button mat-raised-button (click)="logOut()"><mat-icon>logout</mat-icon>Sign Out</button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+
+
+  </button>
+</mat-toolbar>
+<router-outlet></router-outlet>

@@ -1,0 +1,57 @@
+<h1 mat-dialog-title>Add New Article {{data.name}}</h1>
+<div mat-dialog-content>
+
+  <mat-vertical-stepper orientation="vertical" [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Article details</ng-template>
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name" required>
+        </mat-form-field>
+<!--        <mat-form-field appearance="fill">-->
+<!--          <mat-label>Category</mat-label>-->
+<!--          <input matInput  formControlName="firstCtrl" required>-->
+<!--        </mat-form-field>-->
+        <mat-form-field appearance="fill">
+          <mat-label>Category</mat-label>
+          <mat-select formControlName="category" name="category" required>
+            <mat-option *ngFor="let cat of categories" [value]="cat">
+              {{cat}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <div>
+          <button (click)="onNext()" mat-button color="primary" matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <ng-template align="center" matStepLabel>Image</ng-template>
+
+        <button class = "upBtn" mat-fab color="primary"  (click)="onUpload()">
+
+          <mat-icon>add_photo_alternate</mat-icon>
+            <input style="display: none" (change)="onFileSelected($event)" #file_in type="file" formControlName="fileCtrl" >
+        </button>
+        <span>{{fileName || "No file uploaded yet."}}</span>
+
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button color="primary" matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template  align="center"  matStepLabel>Submit</ng-template>
+      <div>
+        <div mat-dialog-actions>
+          <button id="CanBtn" mat-stroked-button color="primary"  (click)="onNoClick()">Cancel</button>
+          <button id="UploadBtn" mat-raised-button color="primary" (click)="onSubmit()" [mat-dialog-close]="data.ent" >Upload</button>
+        </div>
+      </div>
+    </mat-step>
+  </mat-vertical-stepper>
+</div>
+
