@@ -1,4 +1,4 @@
-# Outfit Creator Game
+# StyleSwap
 
 This project is a web-based dress-up game that allows users to create custom outfits by mixing and matching different clothing items. The game is built using **Angular**, **Material Angular**, and **TypeScript**. The UI is fully responsive and styled with Material Angular components to provide an engaging user experience.
 
